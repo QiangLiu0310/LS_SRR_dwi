@@ -6,8 +6,8 @@ clear; close all; clc;
 
 %% define output directories
 
-data_dir   = '/scratch/home/ql087/data_bwh/Cima_data/2026_06_09_mgh_phantom/nii/pa/nii/NII/NII_reset/';
-data_dir1 = '/scratch/home/ql087/data_bwh/Cima_data/2026_06_09_mgh_phantom/nii/ap/nii/'; 
+data_dir   = '/Cima_data/2026_06_09_mgh_phantom/nii/pa/nii/NII/NII_reset/';
+data_dir1 = '/Cima_data/2026_06_09_mgh_phantom/nii/ap/nii/'; 
 nii_fn_cell = cell(1,12);  
 for i = 1:12
     nii_fn_cell{i} = fullfile(data_dir, ['view_', num2str(i), '.nii']);

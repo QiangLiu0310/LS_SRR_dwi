@@ -8,8 +8,8 @@
 clear; close all; clc;
 step=3;
 
-data_dir    = '/scratch/home/ql087/data_bwh/Cima_data/2026_06_09_mgh_phantom/nii/pa/nii/';
-out_nii_dir = '/scratch/home/ql087/data_bwh/Cima_data/2026_06_09_mgh_phantom/nii/pa/nii/NII/';
+data_dir    = '/Cima_data/2026_06_09_mgh_phantom/nii/pa/nii/';
+out_nii_dir = '/Cima_data/2026_06_09_mgh_phantom/nii/pa/nii/NII/';
 
 if (step==2)
 
@@ -53,7 +53,7 @@ end
 if (step==3)
 
     in_nii_dir = out_nii_dir;
-    out_dir    = '/scratch/home/ql087/data_bwh/Cima_data/2026_06_09_mgh_phantom/nii/pa/nii/NII/NII_reset/';
+    out_dir    = '/Cima_data/2026_06_09_mgh_phantom/nii/pa/nii/NII/NII_reset/';
 
     if ~exist(out_dir, 'dir')
         mkdir(out_dir);
